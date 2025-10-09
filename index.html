@@ -46,7 +46,7 @@
     }
 
     nav {
-      margin-left: 1.6em; /* this indents the whole nav block */
+      margin-left: 1.5em; /* this indents the whole nav block */
     }
 
     nav ul {
@@ -92,7 +92,37 @@
 </head>
 <body>
   <main>
-    <h1>Szu-Chi Lin, but call me Amanda — otherwise, it sounds like <em>sushi</em>.</h1>
+    <h1>Szu-Chi Lin, but call me Amanda<br>— otherwise, it sounds like <em class="melt">sushi</em>...</h1>
+    <style>
+  .melt {
+    display: inline-block;
+    font-style: italic;
+    color: #ff4da6;
+    position: relative;
+    animation: melt 3s ease-in-out infinite alternate;
+    line-height: 1.2;
+    padding-right: 5px;
+    overflow: visible;
+  }
+
+  @keyframes melt {
+    0% {
+      filter: blur(0);
+      transform: translateY(0);
+      color: #ff4da6;
+    }
+    50% {
+      filter: blur(1.5px);
+      transform: translateY(2px);
+      color: #ff80bf;
+    }
+    100% {
+      filter: blur(0);
+      transform: translateY(0);
+      color: #ff4da6;
+    }
+  }
+</style>
     <p>🧠 Grad student @ NTU · EEG + ML researcher</p>
 
     <nav>
