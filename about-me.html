@@ -4,10 +4,11 @@
   <meta charset="utf-8">
   <title>About Me – Amanda Lin</title>
 
-  <!-- safer for strict parsers -->
+  <!-- Safer for strict parsers -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Fira+Mono&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Fira+Mono&display=swap" rel="stylesheet">
+
   <style>
     * {
       box-sizing: border-box;
@@ -101,7 +102,6 @@
         padding: 2rem 5%;
       }
     }
-
   </style>
 </head>
 
@@ -109,14 +109,14 @@
   <h1>From Formal Systems to Neural Signals: My Path Toward Data Science and Cognitive Research</h1>
 
   <h3>Early Years: Exploration and Transition</h3>
-  <p>The transition from Physics to Mathematics, combined with a period of <strong>exploring diverse academic interests</strong>, led to a temporary lack of focus during my undergraduate years, reflected in courses taken from a range of departments and a GPA of 2.95. However, this intellectual wandering proved formative — it <strong>clarified my genuine passion for data-driven, computational and quantitative research</strong>, laying the groundwork for the focus and rigor that later defined my graduate studies.</p>
-  
+  <p>The transition from Physics to Mathematics, combined with a period of <strong>exploring diverse academic interests</strong>, meant my undergraduate years were marked by experimentation across a wide range of disciplines. While this phase lacked a clear direction at times, the process of trial and error proved formative — it <strong>clarified my genuine passion for data-driven, computational, and quantitative research</strong>, laying the groundwork for the focus and rigor that later defined my graduate studies.</p>
+
   <p>Despite that rocky start, I never lost my love for mathematics — the rigor, abstraction, and purity that first drew me to the field still feel like sheer beauty to me. What changed was my understanding of its purpose: rather than treating math as an isolated pursuit, I began to see it as a language that gives structure to complexity and meaning to noise. This realization reshaped my trajectory — toward applying mathematical reasoning to domains that are deeply human, from language and cognition to clinical and neural data — and taught me that <strong>intellectual resilience is not about perfection, but about <em>redefinition</em></strong>.</p>
 
   <p>Upon receiving my B.Sc. in mathematics, I entered the Graduate Institute of Linguistics as I was fascinated by the complexity and structure of language — not only as symbolic systems derived from formal logic, but also as real-world data that contain both signal (patterns, structure) and noise (exceptions, errors). I was particularly intrigued by how “neural networks,” both biological (the brain) and artificial (language models), process and generate language. This perspective positioned linguistics not merely as a humanities discipline, but as a <strong>data science of human communication — bridging formal theory, empirical data, and computational modeling</strong>.</p>
 
   <h3>ERP Research and Self-Taught Coding</h3>
-  <p>My research foundation was built during my first year of graduate study in the Brain and Language Processing Lab, where I worked on a regression-based ERP (<a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=regression+based+event+related+potentials&amp;oq=#d=gs_qabs&amp;t=1759604616202&amp;u=%23p%3DerbfP7XZSEYJ">rERP</a>, a cutting-edge ERP method) reanalysis of a psycholinguistic dataset. At the time, I re-learned <code>Python</code> from scratch — through trial and error, without the convenience of modern AI tools — by implementing regression and time-series analysis pipelines via <code>MNE</code>. The project was later accepted for presentation at the 2023 <a href="https://sprweb.org/">Society for Psychophysiological Research</a> Annual Meeting (though not attended due to timing conflicts and financial considerations).</p>   
+  <p>My research foundation was built during my first year of graduate study in the Brain and Language Processing Lab, where I worked on a regression-based ERP (<a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=regression+based+event+related+potentials">rERP</a>, a cutting-edge ERP method) reanalysis of a psycholinguistic dataset. At the time, I re-learned <code>Python</code> from scratch — through trial and error, without the convenience of modern AI tools — by implementing regression and time-series analysis pipelines via <code>MNE</code>. The project was later accepted for presentation at the 2023 <a href="https://sprweb.org/">Society for Psychophysiological Research</a> Annual Meeting (though not attended due to timing conflicts and financial considerations).</p>
 
   <p>Beyond data analysis, I gained hands-on experience in EEG data collection and experimental design. During the stimuli construction stage, I taught myself <code>Google Apps Script</code> (<code>JavaScript</code>-based) to automate large-scale emailing for participant ratings on linguistic attributes. This system replaced what would otherwise have been days of manual labor — my first real taste of how computational tools can streamline real-world workflows.</p>
 
@@ -127,18 +127,25 @@
     <li><a href="https://github.com/amandalin047/Updating_rERP_2023">Updating_rERP_2023</a></li>
     <li><a href="https://github.com/amandalin047/ERPclass/tree/preprocessing">ERPclass</a></li>
   </ul>
+
   <blockquote>
     “See branches <code>preprocessing</code> and <code>hw3-tutorial</code>; branch <code>installation</code> is for, well, student installation guides.”
   </blockquote>
 
-  <h3>Thesis Research: Rationality, Interpretability, and Reconstruction</h3> <p>My path into data science was forged through reconstruction—intellectual, emotional, and methodological. During my master’s thesis, I was intrigued by how LLMs make decisions and turned to <em>A Course in Game Theory</em> by Osborne and Rubinstein to build the mathematical foundation. Derivations like the proof of Nash equilibrium via Kakutani’s fixed point theorem grounded my understanding of <em>rationality</em> as a formal construct. To move beyond prompt-response analysis, I explored XAI/model interpretability, but quickly hit dead ends: saliency maps require gradients, unavailable for black-box LLMs; model-agnostic methods like LIME perturb local input space, difficult to define for discrete (tokenized) text. After weeks of failed attempts, I landed on Shapley values, whose origin in cooperative game theory made them both theoretically elegant and technically viable. Integrating <code>SHAP</code> with custom clustering and token-level analysis became an important, though still evolving, part of my thesis.</p>
- <p>An early version of this work, submitted to an ACL workshop, was rejected. That rejection became a <strong>stationary inflection point on my learning curve</strong>: the reviewers’ critiques sharpened my thinking and pushed me to reconstruct my experiments from the ground up: expanding sample sizes, adding statistical justification, formalizing my analysis through model architecture, and aligning results with cognitive psychology literature.</p>
- <p>This trajectory taught me that sometimes failures reveal more than successes: in LLMs, flaws in strategic reasoning expose representational limits; in neuroscience, anomalies in biosignals illuminate cognition and psychopathology. I now see research as advancing not only by optimizing performance, but also by interpreting breakdowns — whether in artificial neural networks or in the noisy, complex signals of the human brain. This philosophy motivates me to <strong>transfer the interpretability and data science skills I developed in my thesis to EEG research and psychopathological prediction, and to contribute to the broader field of science and clinical medicine</strong>.</p>
+  <h3>Thesis Research: Rationality, Interpretability, and Reconstruction</h3>
+  <p>My path into data science was forged through reconstruction — intellectual, emotional, and methodological. During my master’s thesis, I was intrigued by how LLMs make decisions and turned to <em>A Course in Game Theory</em> by Osborne and Rubinstein to build the mathematical foundation. Derivations like the proof of Nash equilibrium via Kakutani’s fixed point theorem grounded my understanding of <em>rationality</em> as a formal construct.</p>
 
- <p>GitHub:</p>
+  <p>To move beyond prompt-response analysis, I explored XAI/model interpretability, but quickly hit dead ends: saliency maps require gradients, unavailable for black-box LLMs; model-agnostic methods like LIME perturb local input space, difficult to define for discrete (tokenized) text. After weeks of failed attempts, I landed on Shapley values, whose origin in cooperative game theory made them both theoretically elegant and technically viable. Integrating <code>SHAP</code> with custom clustering and token-level analysis became an important, though still evolving, part of my thesis.</p>
+
+  <p>An early version of this work, submitted to an ACL workshop, was rejected. That rejection became a <strong>stationary inflection point on my learning curve</strong>: the reviewers’ critiques sharpened my thinking and pushed me to reconstruct my experiments from the ground up: expanding sample sizes, adding statistical justification, formalizing my analysis through model architecture, and aligning results with cognitive psychology literature.</p>
+
+  <p>This trajectory taught me that sometimes failures reveal more than successes: in LLMs, flaws in strategic reasoning expose representational limits; in neuroscience, anomalies in biosignals illuminate cognition and psychopathology. I now see research as advancing not only by optimizing performance, but also by interpreting breakdowns — whether in artificial neural networks or in the noisy, complex signals of the human brain. This philosophy motivates me to <strong>transfer the interpretability and data science skills I developed in my thesis to EEG research and psychopathological prediction, and to contribute to the broader field of science and clinical medicine</strong>.</p>
+
+  <p>GitHub:</p>
   <ul>
     <li><a href="https://github.com/amandalin047/Can-LLMs-Play-the-Game-They-Talk">Can-LLMs-Play-the-Game-They-Talk</a></li>
   </ul>
+
   <blockquote>
     “I plan to further refine this study for international conference submissions.”
   </blockquote>
